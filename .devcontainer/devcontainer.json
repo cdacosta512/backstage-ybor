@@ -1,0 +1,14 @@
+{
+"name": "Backstage Dev",
+"features": {
+"ghcr.io/devcontainers/features/node:1": {
+"version": "20"
+}
+},
+"forwardPorts": [3000, 7007],
+"portsAttributes": {
+"3000": { "label": "Backstage Frontend" },
+"7007": { "label": "Backstage Backend" }
+},
+"postCreateCommand": "corepack enable"
+}
